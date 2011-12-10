@@ -14,7 +14,7 @@ public class ShowPE extends ProcessingElement {
         super(app);
     }
 
-    public void onTrigger(Event event) {
+    public void onEvent(Event event) {
 
         logger.info("Received event with tick {} and time {}.", event.get("tick", Long.class), event.getTime());
 
